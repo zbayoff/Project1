@@ -18,6 +18,7 @@ body {
     font-size: 16px;
     padding: 0;
     margin: 0;
+    background-image: url(../img/black-felt.png);
 }
 
 p {
@@ -33,10 +34,9 @@ h1 {
 
 /*------------Home Page------------*/
 
-main {
+#first-page {
     padding: 0;
     margin: 0;
-    background-image: url(../img/black-felt.png);
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -62,19 +62,83 @@ main {
     padding: 0;
 }
 
-ul {
+#first-page ul {
     list-style: none;
     padding: 0;
     margin: 0;
     text-align: center;
 }
 
-a {
+#first-page a {
     text-decoration: none;
     color: #000;
     text-transform: uppercase;
 }
 
-a:visited {
+#first-page a:visited {
     color: #000;
 }
+
+/*------------Header------------*/
+
+header {
+    margin-top: 4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border-bottom: 10px double #383838;
+}
+ 
+header #logo {
+    font-size: 6em;
+}
+
+/*------------Main------------*/
+
+main h2 {
+    text-align: center;
+}
+
+/*---Projects ul----*/
+#projects {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 80%;
+    border: 3px solid blue;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#projects li {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+#projects li img {
+    border: 3px solid red;
+    width: 200px;
+    height: 100px;
+    padding: 0;
+    margin: 0;
+}
+
+#projects li a {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+
