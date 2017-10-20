@@ -72,7 +72,7 @@ a {
     background-color: #BFACB5;
 }
 
-@keyframes rotate-logo {
+@keyframes rotate-logoY {
     from {
         transform: rotateY(0deg);
     }
@@ -82,7 +82,7 @@ a {
 }
 
 #logo-large:hover {
-    animation: rotate-logo 2s ease-in-out
+    animation: rotate-logoY 2s ease-in-out
 }
 
 .titles h1 {
@@ -132,8 +132,6 @@ a {
 
 /*------------Header------------*/
 
-
-
 header {
     margin-top: 3rem;
     margin-left: auto;
@@ -145,41 +143,53 @@ header {
     display: flex;
     align-items: center;
 }
- 
+
 .left-logo-container {
-    
+
     display: flex;
     margin-bottom: 1rem
-    
-    
 }
 
 div #logo-small {
     margin-left: 3rem;
+    margin-right: 1rem;
     font-family: 'Sedgwick Ave Display', cursive;
     font-size: 6rem;
     border: 2px solid black;
     border-radius: 3rem;
-    padding: 1.5rem 1rem 0 1rem;
+    padding: 1.5rem 1.1rem 0 1rem;
     background-color: #BFACB5;
-
 }
+
+@keyframes rotate-logoX {
+    from {
+        transform: rotateX(0deg);
+    }
+    to {
+        transform: rotateX(360deg);
+    }
+}
+
+div #logo-small:hover {
+    animation: rotate-logoX 2s ease-in-out
+}
+
 
 #title {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    margin-left: 1rem;
+    margin-left: .5rem;
 }
 
 #title p {
     font-family: 'Exo 2', sans-serif;
     font-size: 2rem;
-    
+
 }
 
-#navs {
+#navs-header {
     display: flex;
     flex-direction: column-reverse;
     flex-grow: 1;
@@ -202,7 +212,7 @@ div #logo-small {
     padding: 1rem 1rem 1rem 1rem;
     margin: 0 0rem 0 .5rem;
     border-radius: 2rem;
-/*    border: 2px solid blue;*/
+    /*    border: 2px solid blue;*/
 }
 
 .main-nav-header a:hover {
@@ -214,7 +224,7 @@ div #logo-small {
     display: flex;
     margin: 0;
     padding: 0;
-    
+
 }
 
 .soc-nav-header a {
@@ -228,7 +238,7 @@ div #logo-small {
     transform: scale(1.5);
 }
 
-.soc-nav-header img{
+.soc-nav-header img {
     width: 2rem;
     height: 2rem;
     background-color: white;
@@ -237,55 +247,140 @@ div #logo-small {
 
 /*------------Main------------*/
 
+main {
+    margin: 5rem auto;
+    width: 90%;
+}
 
-/*
-main #container {
+.bio-container {
+    margin: 0 auto;
+    width: 50rem;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+.bio-container h1 {
+    padding-bottom: 5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: justify;
+}
+
+.bio-container h2 {
+    /*    padding-bottom: 1rem;*/
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: inline-block;
+    float: left;
+}
+
+.bio-container ul {
+    float: right;
+    width: 70%;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+
+}
+
+.bio-container li {
+    display: inline-block;
+    font-size: 1.2rem;
+    padding: .5rem;
+    margin: .2rem;
+    background-color: #31302B;
+    color: white;
+}
+
+#bio-image {
+    clear: both;
+    text-align: center;
+    margin: 2rem;
+}
+
+#bio-image p {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0;
+}
+
+#bio-image img {
+    width: 30rem;
+    margin-top: 5rem;
+
+}
+
+/*------------Footer------------*/
+
+footer {
+    margin-bottom: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    border-right: 3px solid black;
+    border-left: 3px solid black;
+    border-top: 3px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navs-footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
     align-items: center;
 }
-*/
 
 
-/*---Projects ul----*/
-
-
-/*
-#projects {
-    list-style: none;
+.main-nav-footer ul {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    width: 80%;
-    border: 3px solid blue;
-    margin: 0 auto;
-    padding: 0;
 }
 
-#projects li {
+.main-nav-footer a {
     display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    padding: 0;
-    margin: 0;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1.5rem;
+    padding: 1rem 1rem 1rem 1rem;
+    margin: 0 0rem 0 .5rem;
+    border-radius: 2rem;
+    /*    border: 2px solid blue;*/
 }
 
-#projects li img {
-    border: 3px solid red;
-    width: 200px;
-    height: 100px;
-    padding: 0;
-    margin: 0;
+.main-nav-footer a:hover {
+    background-color: #BFACB5;
+    box-shadow: .5rem .5rem 1rem;
 }
 
-#projects li a {
-    padding: 0;
+.soc-nav-footer ul {
+    display: flex;
     margin: 0;
+    padding: 0;
+
 }
-*/
+
+.soc-nav-footer a {
+    display: flex;
+    margin: 1rem;
+}
+
+.soc-nav-footer a:hover {
+    display: flex;
+    margin: 1rem;
+    transform: scale(1.5);
+}
+
+.soc-nav-footer img {
+    width: 2rem;
+    height: 2rem;
+    background-color: white;
+    border-radius: .6rem;
+}
+
+#copyright {
+    margin: 1rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1rem;
+}
