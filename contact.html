@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
 </head>
 
 <body>
@@ -17,8 +18,9 @@
     <header>
 
         <div class="left-logo-container">
-            <div>
-                <p id="logo-small">ZB</p>
+            
+            <div id="logo-small">
+                <a href="index.html">ZB</a>
             </div>
             <div id="title">
                 <p>Zach Bayoff</p>
@@ -26,11 +28,11 @@
             </div>
         </div>
 
-        <div id="navs">
-            
+        <div id="navs-header">
+
             <nav class="main-nav-header" role="navigation">
                 <ul id="page-nav">
-                    <li><a href="#about">About</a></li>
+                    <li><a href="about.html">About</a></li>
                     <li><a href="projects.html">Portfolio</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
@@ -38,9 +40,15 @@
 
             <nav class="soc-nav-header" role="navigation">
                 <ul id="page-nav">
-                    <li><a href="https://www.facebook.com/"><img src="assets/img/facebook.png"></a></li>
-                    <li><a href="https://www.instagram.com/?hl=en"><img src="assets/img/instagram.png"></a></li>
-                    <li><a href="https://www.linkedin.com/"><img src="assets/img/square-linkedin-512.png"></a></li>
+                    <li>
+                        <a href="https://www.facebook.com/"><img src="assets/img/facebook.png"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/?hl=en"><img src="assets/img/instagram.png"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/"><img src="assets/img/square-linkedin-512.png"></a>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -49,57 +57,114 @@
 
     <main role="main">
 
-        <h2>About Me</h2>
+        <div id="contact-blurb">
+            <h2> Let's talk about your project! Don't hesitate to call/email or leave a brief message below and I'll get back to you ASAP.</h2>
 
-        <p>Hi, I'm Zach: A world <strong>renown</strong> web designer and developer. I have created over 1000+ sites of all different types for a variety of different client including, but not limited to: </p>
+            <p> Email: fsaf@dasdad.com</p>
 
-        <ul>
-            <li>Portfolios</li>
-            <li>Ecommerce</li>
-            <li>Blogs</li>
-            <li>Landing Pages</li>
-            <li>Non-Profit</li>
-            <li>Social</li>
-            <li>Wordpress</li>
-        </ul>
-        
-        <p>And Many More!</p>
-        
-        <h2>Projects</h2>
-        
-        <ul class="projects">
+            <p> Phone: xxx-xxxx</p>
 
-                    <li>
-                        <a class="project-link" href="https://www.netflix.com/" title="Netflix" target="_blank" id="one"><img src="assets/images/Netflix.jpg"></a>
-                    </li>
-                    <li>
-                        <a class="project-link" href="https://www.apple.com/" title="Apple" target="_blank" id="two"><img src="assets/images/Apple_website.png"></a>
-                    </li>
-                    <li>
-                        <a class="project-link" href="http://www.latimes.com/hp-2/" title="LA Times" target="_blank" id="three"><img src="assets/images/latimes.jpg"></a>
-                    </li>
-                    
-                    <li>
-                        <a class="project-link" href="http://www.latimes.com/hp-2/" title="LA Times" target="_blank" id="three"><img src="assets/images/latimes.jpg"></a>
-                    </li>
-                    
-                    <li>
-                        <a class="project-link" href="http://www.latimes.com/hp-2/" title="LA Times" target="_blank" id="three"><img src="assets/images/latimes.jpg"></a>
-                    </li>
-                    
-                    <li>
-                        <a class="project-link" href="http://www.latimes.com/hp-2/" title="LA Times" target="_blank" id="three"><img src="assets/images/latimes.jpg"></a>
-                    </li>
-                    
-                    <li>
-                        <a class="project-link" href="http://www.latimes.com/hp-2/" title="LA Times" target="_blank" id="three"><img src="assets/images/latimes.jpg"></a>
-                    </li>
-
-                </ul>
+        </div>
         
+        <div id="contact-title">
+         <h2>Contact</h2>
+        </div>
 
-        
+        <div id="contact-container">
+
+           
+
+            <div id="map">
+                <iframe class="map-location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.9364266113093!2d-73.9873818777108!3d40.69739775309927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a359fabd2e3%3A0x7d836f38d0f9be7!2s25+Chapel+St%2C+Brooklyn%2C+NY+11201!5e0!3m2!1sen!2sus!4v1506710856644" allowfullscreen></iframe>
+            </div>
+
+
+            <form action="" method="post">
+                <fieldset>
+                    <h3>Contact Form</h3>
+                    <p class="row">
+                        <!--                    <label for="first-name">First Name:</label>-->
+                        <input type="text" id="first-name" name="first-name" placeholder="First Name" required aria-required="true">
+                    </p>
+                    <p class="row">
+                        <!--                    <label for="last-name">Last Name:</label>-->
+                        <input type="text" id="last-name" name="last-name" placeholder="Last Name" required aria-required="true">
+                    </p>
+                    <p class="row">
+                        <label for="field">Select your Field/Occupation:</label>
+                        <select>
+                            <option>Arts</option>
+                            <option>Engineering</option>
+                            <option>Finance</option>
+                            <option>Health</option>
+                            <option>Legal</option>
+                            <option>Other</option>
+                        </select>
+                    </p>
+                    <p class="row">
+                        <!--                    <label for="email">Email:</label>-->
+                        <input type="email" id="email" name="email" placeholder="yourname@example.com" required aria-required="true">
+                    </p>
+                    <p class="row">
+                        <!--                    <label for="phone">Phone No.</label>-->
+                        <input type="tel" id="phone" name="phone" placeholder="Phone No.">
+                    </p>
+                    <p class="row">
+                        <!--                    <label for="message">Message</label>-->
+                        <textarea cols="40" rows="10" class="input-field" placeholder="Brief Message:"></textarea>
+                    </p>
+                    <p class="row">
+                        <label for="upload">Upload a File</label>
+                        <input type="file" id="file" name="file">
+                    </p>
+
+                    <div class="btn-holder">
+                        <input type="submit" value="Submit">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+
     </main>
+    
+    <footer>
+        <div id="navs-footer">
+
+            <nav class="main-nav-footer" role="navigation">
+                <ul id="page-nav">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="projects.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <nav class="soc-nav-footer" role="navigation">
+                <ul id="page-nav">
+                    <li>
+                        <a href="https://www.facebook.com/"><img src="assets/img/facebook.png"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/?hl=en"><img src="assets/img/instagram.png"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/"><img src="assets/img/square-linkedin-512.png"></a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div id="copyright">
+                <p>Zach's Site &copy; 2017</p>
+            </div>
+
+        </div>
+
+
+    </footer>
+
+
+</body>
+</html>
+    
 </body>
 
 </html>
